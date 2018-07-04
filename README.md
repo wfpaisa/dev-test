@@ -4,6 +4,7 @@
 https://projects.invisionapp.com/share/5TM7OTGYFQZ#/screensLa 
 - Tipografía utilizada es **Open Sans**, disponible en Google Fonts.
 - Cada una de las secciones debe estar a pantalla completa, la sección principal es un slider que recibe información de la siguiente url: https://api.myjson.com/bins/17ocpi
+
 - El uso de plugins es opcional y a criterio del desarrollador.
 - **Importante! Debe ser responsive**
 
@@ -18,8 +19,9 @@ https://projects.invisionapp.com/share/5TM7OTGYFQZ#/screensLa
 # Instrucciones
 
 - Envíe un correo a sergio.cardona@sigma3ds.com en el momento de inicializar la prueba con su nombre y apellido
-- Cree un nuevo branch en este repositorio con este formato: "nombre-apellido"
+- Cree un nuevo fork desde este repositorio
 - Realice un commit por cada cambio que considere importante
 - Envíe un correo a sergio.cardona@sigma3ds.com en el momento de finalizar la prueba con su nombre y apellido
+- Opcionalmente puede enviar la prueba en un archivo zip si no tiene conocimientos en git
 
 Gracias!
