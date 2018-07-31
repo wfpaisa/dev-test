@@ -4,6 +4,9 @@
 https://projects.invisionapp.com/share/5TM7OTGYFQZ#/screensLa 
 - Tipografía utilizada es **Open Sans**, disponible en Google Fonts.
 - Cada una de las secciones debe estar a pantalla completa, la sección principal es un slider que recibe información de la siguiente url: https://api.myjson.com/bins/17ocpi
+- La segunda página contiene una funcionalidad simple que cumple las siguiente condicones:
+-- 1. Si alguna respuesta en el formulario es "Yes" entonces en la consola se debe mostrar el mensaje "true".
+-- 2. Si todas las respuestas en el formulario son "No" entonces en la consola se debe mostrar el mensaje "false".
 
 - El uso de plugins es opcional y a criterio del desarrollador.
 - **Importante! Debe ser responsive**
