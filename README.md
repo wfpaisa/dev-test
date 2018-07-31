@@ -1,7 +1,7 @@
 # Requerimiento:
 
 - Se requiere maquetar la siguiente landing page usando **Bootstrap 4**.
-https://projects.invisionapp.com/share/5TM7OTGYFQZ#/screensLa 
+https://projects.invisionapp.com/share/MYM7OTCRA8D
 - Tipografía utilizada es **Open Sans**, disponible en Google Fonts.
 - Cada una de las secciones debe estar a pantalla completa, la sección principal es un slider que recibe información de la siguiente url: https://api.myjson.com/bins/17ocpi
 - La segunda página contiene una funcionalidad simple que cumple las siguiente condicones:
