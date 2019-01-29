@@ -1,0 +1,95 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #5e2697;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ------ SECTIONS -------*/
+
+/* MENU */
+header {
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  width: 100%;
+  font-size: 90%;
+}
+.navbar-nav .nav-link {
+  outline: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link.btn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.navbar-nav .nav-link:not(.btn) {
+  transition: all 0.28s ease-out 0s;
+}
+.navbar-nav .nav-link:not(.btn) {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+.navbar-nav .nav-link:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-nav .nav-link.active {
+  border-bottom-color: rgba(255, 255, 255, 1);
+}
+.navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* SLIDER */
+#slider {
+  background-color: #5e2697;
+  /* background: url("http://storage.sigmastudios.com.co/test/slider-1.jpg")
+  no-repeat center center fixed;
+  background-color: #4d2575;
+  background-size: cover; */
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* PAGE1 */
+#page1 {
+  background-color: #5e2697;
+}
+
+/* Page2 */
+#page2 {
+  background-color: #512182;
+}
+
+/* Page3 */
+#page3 {
+  background-color: #431b6c;
+}
+
+/* Footer */
+footer {
+  background-color: #5e2697;
+}
