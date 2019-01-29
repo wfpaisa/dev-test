@@ -5,30 +5,44 @@ $( document ).ready(function() {
   // Scroll actions
   $('body').scrollspy({ target: '#navbarNav' });
   var scroll = new SmoothScroll('a[href*="#"]');
-  var anchor = document.querySelector('#bazinga');
-  var toggle = document.querySelector('#toggle');
-  var options = { speed: 1000, easing: 'easeOutCubic' };
-  scroll.animateScroll(anchor, toggle, options);
   
+  // Menu
+  $('#navbarNav').on('show.bs.collapse', function () {
+    $('nav').addClass('nav-open')
+  })
+  $('#navbarNav').on('hide.bs.collapse', function () {
+    $('nav').removeClass('nav-open')
+  })
+
   // Slider
-  $('.carousel').carousel();
-  
-    // $.ajax( {
-    //     url: '/carousel',
-    //     dataType: 'json',
-    //     success: function(data) {
-    //      var response = '',
-    //          indicator = '';
-    //      for (var i = 0; i < data.d.results.length; i++) {
-    //          response += '<div class="item"><img src="' + data.d.results[i].Image_x0020_URL + '"><div class="carousel-caption"><h3>' + data.d.results[i].Title + '</h3><p>' + data.d.results[i].Content + '</p><p><a class="btn btn-info btn-sm">Read More</a></p></div></div>';
-    //          indicator += '<li data-target="#myCarousel" data-slide-to="'+i+'"></li>';
-    //      }
-    //      $('#homepageItems').append(response);
-    //      $('#indicators').append(indicator);
-    //      $('.item').first().addClass('active');
-    //      $('.carousel-indicators > li').first().addClass('active');
-    //      $("#myCarousel").carousel();
-    //     }
-    // });
+  $.getJSON( "https://api.myjson.com/bins/17ocpi", function(data) {
+    
+    let sliders = '';
+
+    $.each( data, function( i, item ) {
+      
+      let active = '';
+      if( i === 'slide_1') active = 'active';
+
+      // First word to normal weight
+      var title= item.title.trim().split(" ");
+      var first = title.shift();
+      title = (title.length > 0 ? `<span>${first}</span> ` : first) + title.join(" ");
+
+      sliders += `<div class="carousel-item ${active}" style="background-image: url('${item.image}')">
+        <div class="carousel-caption d-md-block">
+          <h1><span></span>${title}</h1>
+          <p>${item.text}</p>
+        </div>
+      </div>`;
+    });
+
+    $('#slider-data').html(sliders);
+    
+    setTimeout(() => {
+      $('.carousel').carousel();
+    }, 1000);
+  })
+
  
 });
