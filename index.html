@@ -6,6 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="theme-color" content="#5e2697" />
+    <meta name="msapplication-navbutton-color" content="#5e2697" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5e2697" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -95,15 +98,183 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="btn-down">
+        <a href="#page1" class="btn btn-lg">Go to bottom</a>
+      </div>
     </div>
 
     <section id="page1" class="page">
       <h1 class="text-center"><span>PAGE 1</span> CHECK FIELDS</h1>
-      <div class="container"><div class="row"></div></div>
+      <div class="container">
+        <form>
+          <div class="form-group row">
+            <label for="question1" class="col-sm-2 col-form-label"
+              >QUESTION 1...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question1">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <label for="question2" class="col-sm-2 col-form-label"
+              >QUESTION 2...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question2">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <label for="question3" class="col-sm-2 col-form-label"
+              >QUESTION 3...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question3">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="question4" class="col-sm-2 col-form-label"
+              >QUESTION 4...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question4">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <label for="question5" class="col-sm-2 col-form-label"
+              >QUESTION 5...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question5">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <label for="question6" class="col-sm-2 col-form-label"
+              >QUESTION 6...</label
+            >
+            <div class="col-sm-2">
+              <select class="form-control form-control-lg" id="question6">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div id="page1-change-text" class="col">
+            <p><b>Question change: false</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li>
+                * If any answer on the form is "Yes" then the console must show
+                a "true" message.
+              </li>
+              <li>
+                * If any answer on the form is "No" then the console must show a
+                "false" message.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="btn-down">
+        <a href="#page2" class="btn btn-lg">Go to bottom</a>
+      </div>
     </section>
-    <section id="page2" class="page">Page 2</section>
-    <section id="page3" class="page">Page 3</section>
-    <footer id="footer" class="page">footer</footer>
+    <section id="page2" class="page">
+      <h1 class="text-center"><span>PAGE 2</span> TEXT</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              ab ipsa aperiam placeat perferendis minus architecto? Dolores
+              earum laborum, aliquid unde, quos, suscipit consequuntur et quam
+              dolor debitis quia error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              ab ipsa aperiam placeat perferendis minus architecto? Dolores
+              earum laborum, aliquid unde, quos, suscipit consequuntur et quam
+              dolor debitis quia error.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              ab ipsa aperiam placeat perferendis minus architecto? Dolores
+              earum laborum, aliquid unde, quos, suscipit consequuntur et quam
+              dolor debitis quia error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              ab ipsa aperiam placeat perferendis minus architecto? Dolores
+              earum laborum, aliquid unde, quos, suscipit consequuntur et quam
+              dolor debitis quia error.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-down">
+        <a href="#page3" class="btn btn-lg">Go to bottom</a>
+      </div>
+    </section>
+    <section id="page3" class="page">
+      <h1 class="text-center"><span>PAGE 3</span> JUST IMAGES</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <div class="card">
+              <img src="img/card-1.png" class="card-img-top" alt="Card 1" />
+              <div class="card-body"><h5 class="card-title">SO NICE</h5></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card">
+              <img src="img/card-2.png" class="card-img-top" alt="Card 2" />
+              <div class="card-body"><h5 class="card-title">SO COOL</h5></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card">
+              <img src="img/card-3.png" class="card-img-top" alt="Card 3" />
+              <div class="card-body">
+                <h5 class="card-title">SO PEACEFUL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-down">
+        <a href="#footer" class="btn btn-lg">Go to bottom</a>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="page d-flex justify-content-center align-items-center"
+    >
+      <h1 class="text-center"><span>THANK</span> YOU</h1>
+
+      <div class="btn-down">
+        <a href="#slider" class="btn btn-lg">Go to header</a>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

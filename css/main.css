@@ -29,6 +29,29 @@ h1 span {
 p {
   line-height: 32px;
 }
+
+label {
+  font-weight: bold;
+}
+
+select.form-control-lg {
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 1rem;
+}
+.card img {
+  border-radius: 0px;
+}
+.card-title {
+  color: #9197a8;
+  text-align: center;
+  font-size: 100%;
+  padding-top: 0.5rem;
+}
 /* ------ SECTIONS -------*/
 
 /* MENU */
@@ -167,8 +190,36 @@ nav.nav-open {
 
 /* General sections */
 section.page > h1 {
-  padding-top: 40px;
+  padding-top: 50px;
 }
+
+.btn-down {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  left: 50%;
+  margin-left: -110px;
+  z-index: 10;
+}
+.btn-down a {
+  background: #512182;
+  border-color: #512182;
+  border-top: 1px solid #722fb5;
+  color: #fff;
+  height: 56px;
+  line-height: 50px;
+  padding: 0px;
+  width: 220px;
+  font-size: 100%;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.btn-down a:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #512182;
+}
+
 @media (min-width: 992px) {
   section.page > h1 {
     padding-top: 120px;
@@ -178,6 +229,19 @@ section.page > h1 {
 /* PAGE1 */
 #page1 {
   background-color: #5e2697;
+}
+#page1 h1 {
+  margin-bottom: 100px;
+}
+#page1 #page1-change-text {
+  background: #542584;
+  border-radius: 0.3rem;
+  padding-top: 1rem;
+}
+#page1 ul {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0px;
 }
 
 /* Page2 */

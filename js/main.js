@@ -1,6 +1,4 @@
-// A $( document ).ready() block.
 $( document ).ready(function() {
-
   
   // Scroll actions
   $('body').scrollspy({ target: '#navbarNav' });
@@ -13,11 +11,10 @@ $( document ).ready(function() {
     }
   } 
   checkMenuTop(); 
-  
+
   $(window).scroll(function () {
     checkMenuTop();
   });
-
 
   // Menu
   $('#navbarNav').on('show.bs.collapse', function () {
@@ -57,5 +54,26 @@ $( document ).ready(function() {
     }, 1000);
   })
 
- 
+
+  // Page 2 Questions
+  let question = false;
+  
+  $( "select" ).change(function() {
+
+    $( "select option:selected" ).each(function() {
+      if( $(this).text() === "Yes"){
+        question = true;
+      }
+    });
+    
+    console.log(question);
+    $('#page1-change-text').html(`<p><b>Question change: ${question}</b></p>`)
+    question = false;
+  })
+  .trigger( "change" );
+  
+  
+  
+  
 });
+
