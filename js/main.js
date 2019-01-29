@@ -5,7 +5,20 @@ $( document ).ready(function() {
   // Scroll actions
   $('body').scrollspy({ target: '#navbarNav' });
   var scroll = new SmoothScroll('a[href*="#"]');
+  function checkMenuTop() {
+    if ($('html').scrollTop() > 60) {
+      $('#menu').addClass('scroll-dow');
+    } else {
+      $('#menu').removeClass('scroll-dow');
+    }
+  } 
+  checkMenuTop(); 
   
+  $(window).scroll(function () {
+    checkMenuTop();
+  });
+
+
   // Menu
   $('#navbarNav').on('show.bs.collapse', function () {
     $('nav').addClass('nav-open')

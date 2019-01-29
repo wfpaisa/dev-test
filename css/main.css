@@ -40,7 +40,7 @@ header {
   font-size: 90%;
 }
 nav.nav-open {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .navbar-nav .nav-link {
   outline: 0;
@@ -76,8 +76,13 @@ nav.nav-open {
 }
 
 @media (min-width: 992px) {
-  header {
+  header#menu {
     top: 40px;
+    transition: all 0.28s ease-out 0s;
+  }
+  header#menu.scroll-dow {
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
   }
 
   nav.nav-open {
@@ -148,11 +153,26 @@ nav.nav-open {
   border-left: 15px solid rgba(255, 255, 255, 1);
 }
 .carousel-caption {
-  bottom: 33%;
+  bottom: 20%;
 }
 
 .carousel-caption h1 {
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .carousel-caption {
+    bottom: 33%;
+  }
+}
+
+/* General sections */
+section.page > h1 {
+  padding-top: 40px;
+}
+@media (min-width: 992px) {
+  section.page > h1 {
+    padding-top: 120px;
+  }
 }
 
 /* PAGE1 */
